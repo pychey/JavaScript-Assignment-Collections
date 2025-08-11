@@ -1,20 +1,16 @@
-// 10/10 Good
+// 10/10 Good job
 
 const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
 const suits = ['clubs', 'diamonds', 'hearts', 'spades'];
-let deck = [{value: 'joker', suit: 'clubs'}];
-
-for (let j = 0; j < suits.length; j++){
-    for (let i = 0; i < values.length; i++){
-        deck[deck.length] = {value: values[i], suit: suits[j]};
+let deck = [{value:' ' , suit:' ' }];
+for ( let i =0; i < suits.length; i ++ ){
+    for ( let j =0; j < values.length; j ++ ){
+        deck[deck.length] =  {value: values[j], suit: suits[i]};
     }
 }
-
-for(let i = 0; i < deck.length; i++){
-    console.log(`${deck[i].value}_${deck[i].suit}`);
+for ( let i =0; i < deck.length; i ++ ){
+    console.log (deck[i].value + '_' + deck[i].suit);
 }
-
-
 
 /**
  * Build A Card Deck
@@ -32,3 +28,4 @@ for(let i = 0; i < deck.length; i++){
  * Until A_diamonds
  * Same with hearts and spades
  */
+
