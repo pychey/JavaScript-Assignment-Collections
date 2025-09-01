@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Antonio;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-banner {
+  position: relative;
+  background: url('../assets/bg-heroes-header.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-banner img {
+  position: absolute;
+  top:0;
+  left:0;
+  margin-top: 10px;
+  margin-left: 10px;
+  width:100px;
+}
+
+.role ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background-color: #222;
+  font-size: large;
+}
+
+.role ul li {
+  list-style: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.role ul .selected {
+  color: #ffcc00;
+}
+
+#hero-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.hero {
+  position: relative;
+  cursor: pointer;
+}
+
+.hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hero-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.hero-role {
+  color: #ffcc00;
+  font-size: 18px;
+}
